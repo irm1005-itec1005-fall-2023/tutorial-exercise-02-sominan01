@@ -39,25 +39,27 @@
     <nav>
     <h3>Site Menu</h3>
     <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
    </nav>
   </header>
 <main>
    <h1>Random City of Ottawa Things</h1>
   <section>
+    <nav>
     <h2>Table of contents</h2>
     <ul>
-      <li><a href=""></a>Housing Construction Summary for Q1 2023</li>
-      <li><a href=""></a>Wards</li>
-      <li><a href=""></a>Property Taxes</li>
-      <li><a href=""></a>Ward Councillor Evaluation Form</li>
+      <li><a href="#housing">Housing Construction Summary for Q1 2023</a></li>
+      <li><a href="#wards">Wards</a></li>
+      <li><a href="#tax">Property Taxes</a></li>
+      <li><a href="#evaluation">Ward Councillor Evaluation Form</a></li>
     </ul>
+    </nav>
   </section>
   <section>
-    <h2 id="">Housing Construction Summary for Q1 2023</h2>
+    <h2 id="housing">Housing Construction Summary for Q1 2023</h2>
     <p>In Q1 2023, there were:</p>
     <ul>
       <li>2,716 dwellings granted land use permissions through Official Plan or Zoning By-law Amendments</li>
@@ -76,12 +78,12 @@
     </ul>
   </section>
   <section>
-    <h2>Wards</h2>
+    <h2 id="wards">Wards</h2>
     <p>The City of Ottawa is divided into 24 wards. Each ward has a councillor who represents the residents of that ward.</p>
     <img src="/images/ottawa-map.png"/>
   </section>
   <section>
-    <h2>Property Taxes</h2>
+    <h2 id="tax">Property Taxes</h2>
     <p>The City of Ottawa collects property taxes from residents to help pay for services such as roads, parks, and public transit.</p>
   </section>
   <section>
@@ -262,7 +264,7 @@
     </table>
     </section>
     <section>
-    <h2>Ward Councillor Evaluation Form </h2>
+    <h2 id="evaluation">Ward Councillor Evaluation Form </h2>
     <p>Rents too high? Not enough housing options in your neighbourhood. OCTranspo buses constantly late or not arriving at all. OTrain shut down again? Do you have to ride your bike on a sidewalk because the roads you use aren't comfortable and don't have a protected bike lane?</p>
     <p>These are all examples of areas of responsibilities that fall to the city and to the mayor and local councillors. Let your councillor know what you think about the job they are doing. Fill out the form below to provide your feedback. </p>
   <form action="">
@@ -344,9 +346,9 @@
       <option value="low">High</option>
       
       <!--not working, error-->
-      <!--<label for="location">Location(if applicable):</label>
+      <label for="location">Location(if applicable):</label>
       <input type="text" id="location"/>
-      </fieldset>-->
+      </fieldset>
 
       <fieldset>
         <legend>Follow-up Information</legend>
@@ -379,4 +381,3 @@
 </html>
 
 
-<!--create semantic structure, fix and direct navigation bar, and fix location-->
