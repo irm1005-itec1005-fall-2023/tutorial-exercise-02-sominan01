@@ -26,13 +26,13 @@
     </style>
   </head>
   <body>
+    <header>
     <!-- INSTRUCTIONS -->
     <!-- TO DO: Add markup to the following content so that it has the proper content structure -->
     <!-- You will need to use the following tags: h1, h2, h3, p, ul, li, a, section, nav, header, footer, main, input, label, fieldset, select, form, table, thead, tobody, tfoot, tr, td, img  -->
     <!-- The correct element appears ABOVE the text -->
     <!-- You may remove the extra comments when you finish, but you don't need to -->
   
-
     <h2>Site Header</h2>
     <p>City of Ottawa Random Data</p>
     <img src="/images/house.png" alt="Condo Tower"/>
@@ -44,8 +44,10 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
    </nav>
+  </header>
 <main>
    <h1>Random City of Ottawa Things</h1>
+  <section>
     <h2>Table of contents</h2>
     <ul>
       <li><a href=""></a>Housing Construction Summary for Q1 2023</li>
@@ -53,6 +55,8 @@
       <li><a href=""></a>Property Taxes</li>
       <li><a href=""></a>Ward Councillor Evaluation Form</li>
     </ul>
+  </section>
+  <section>
     <h2 id="">Housing Construction Summary for Q1 2023</h2>
     <p>In Q1 2023, there were:</p>
     <ul>
@@ -70,11 +74,17 @@
       </ul>
       <li>2,135 dwellings where construction was completed</li>
     </ul>
+  </section>
+  <section>
     <h2>Wards</h2>
     <p>The City of Ottawa is divided into 24 wards. Each ward has a councillor who represents the residents of that ward.</p>
     <img src="/images/ottawa-map.png"/>
+  </section>
+  <section>
     <h2>Property Taxes</h2>
     <p>The City of Ottawa collects property taxes from residents to help pay for services such as roads, parks, and public transit.</p>
+  </section>
+  <section>
     <h3>Probing questions</h3>
     <p>Reviewing the data in the following table, answer the following questions: </p>
     <ul>
@@ -83,6 +93,8 @@
       <li>What is the total property tax revenue for the City of Ottawa?</li>
       <li>What is the difference in size between the ward that collects the most property taxes and the ward that collects the least?</li>
     </ul>
+  </section>
+  <section>
     <h3>Ward specific data</h3>
     <table>
       <thead>
@@ -248,6 +260,8 @@
           </tr>
         </tbody>
     </table>
+    </section>
+    <section>
     <h2>Ward Councillor Evaluation Form </h2>
     <p>Rents too high? Not enough housing options in your neighbourhood. OCTranspo buses constantly late or not arriving at all. OTrain shut down again? Do you have to ride your bike on a sidewalk because the roads you use aren't comfortable and don't have a protected bike lane?</p>
     <p>These are all examples of areas of responsibilities that fall to the city and to the mayor and local councillors. Let your councillor know what you think about the job they are doing. Fill out the form below to provide your feedback. </p>
@@ -327,10 +341,42 @@
       <label for="priority">Priority Level:</label>
       <select name="priority" id="priority">
       <option value="low">Low</option>
+      <option value="low">High</option>
       
-    </fieldset>
+      <!--not working, error-->
+      <!--<label for="location">Location(if applicable):</label>
+      <input type="text" id="location"/>
+      </fieldset>-->
 
+      <fieldset>
+        <legend>Follow-up Information</legend>
+        <input type="checkbox">I would like to receive a follow-up response. Preferred Contact Method: 
+        <select>
+          <option>Email</option>
+          <option>Mail</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Submit Feedback:</legend>
+        <input type="checkbox"> I consent to the use of my feedback. <button>Submit Feedback</button>
+      </fieldset>
+    </section>
+</main>
+      <footer>
+      <h2>Site footer</h2>
+      <nav>
+        <h3>Site navigation</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+    </footer>
   </form>
-  </main>  
 </body>
 </html>
+
+
+<!--create semantic structure, fix and direct navigation bar, and fix location-->
